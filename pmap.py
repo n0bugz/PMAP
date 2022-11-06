@@ -44,7 +44,7 @@ def scan(target, port):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         usage='pmap.py -t TARGET -p PORTS'
-              '\nexample: python3 pmap.py 192.168.227.121 -p 21,80')
+              '\nexample: python3 pmap.py -t 192.168.227.121 -p 21,80')
 
     parser.add_argument('-t', type=str, metavar='TARGET_HOST', help='specify target host (IP address or domain name)')
     parser.add_argument('-p', required=True, type=str, metavar='TARGET_PORTS',help='specify target port[s] separated by comma ''(no spaces)')
